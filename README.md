@@ -6,7 +6,8 @@
 
 **学習以外での攻撃目的での使用は厳禁**。
 
-Future Tech Blogにて解説記事を公開予定です。
+Future Tech Blogにて解説記事を公開しました！
+https://future-architect.github.io/articles/20251027a/
 
 ## 同梱内容（概要）
 ```
@@ -27,12 +28,14 @@ Future Tech Blogにて解説記事を公開予定です。
 ## 起動手順（例）
 
 ### 脆弱版を起動する
+
 ```bash
 cd 01-vulnerable
 npm install
 npm run server   # APIサーバ: http://localhost:3001
 npm run dev      # フロントエンド: http://localhost:5173
 ```
+
 別ターミナルで npm run server と npm run dev を起動してください。dev は Vite を使いフロントを 5173 で公開し、/api は 3001 のサーバへプロキシされます。
 
 安全版を起動する（使い方は同じ）
@@ -163,6 +166,8 @@ curl -X POST http://localhost:3001/api/reset -c cookies.txt -b cookies.txt
 ⸻
 
 ライセンス・免責
+
 	•	教材は教育目的でGitHubおよびFuture技術ブログ上で公開します。利用は自己責任でお願いします。
+	
 	•	本リポジトリのコードを用いて発生した損害について作者は責任を負いません。
 
